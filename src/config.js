@@ -1,0 +1,18 @@
+const { Console } = require('console');
+const mongoose = require('mongoose');
+require('dotenv').config();
+
+/**
+ * Função para conectar no banco MongoDB
+ */
+const connectMongoDB = async () => {
+    try { 
+        await mongoose.connect(process.env.MONGO_URI)
+        console.log('Conectado ao MongoDB com sucesso!')
+    } catch (error) {
+        console.error('Erro na conexão com MongoDD', error);
+        process.exit(1)
+    }
+};
+
+module.exports = { connectMongoDB };
