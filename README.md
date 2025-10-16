@@ -46,12 +46,26 @@ A aplicação estará disponível na porta `3000`.
 ## Estrutura do Projeto
 
 src/
+
+
 ├── config/ # Configurações gerais do projeto
+
+
 ├── models/ # Models do banco (ex: Camera)
+
+
 ├── routes/ # Rotas da API REST
+
+
 ├── services/ # Serviços como Kafka consumer
+
+
 ├── test/ # Funções auxiliares para testes
+
+
 ├── utils/ # Utilitários do sistema (ex: validações)
+
+
 └── app.js # Ponto de entrada da aplicação
 
 ## Contribuição
