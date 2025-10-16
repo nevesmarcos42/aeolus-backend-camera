@@ -1,4 +1,4 @@
-const Joi = require('joi');
+import Joi from'joi';
 
 
 // Validação dos dados da câmera para garantir formato correto
@@ -9,4 +9,4 @@ const cameraSchema = Joi.object({
     enderecoRTSP: Joi.string().uri().required()
 });
 
-module.exports = { cameraSchema };
+module.exports =  cameraSchema ;
