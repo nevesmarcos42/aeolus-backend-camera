@@ -1,8 +1,8 @@
-// src/app.js
-const express = require('express');
-const { connectMongoDB } = require('./config');
-const cameraRoutes = require('./routes/cameras');
-require('dotenv').config();
+import express from 'express';
+import connectMongoDB from './config/databaseConnection.js';
+import startConsumer from'./services/kafkaConsumer.js';
+import cameraRoutes from'./routes/cameras.js';
+import 'dotenv/config';
 
 const app = express();
 
@@ -20,5 +20,7 @@ const startServer = async () => {
     console.log(`Servidor rodando na porta ${PORT}`);
   });
 };
+
+startConsumer().catch(e => console.error(`[Kafka Consumer] Erro: ${e.message}`, e));
 
 startServer();
