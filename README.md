@@ -31,6 +31,7 @@ Projeto backend para gerenciamento e processamento de dados de câmeras utilizan
 Clone o repositório:
 git clone https://github.com/nevesmarcos42/aeolus-backend-camera.git
 
+
 cd aeolus-backend-camera
 
 
@@ -68,7 +69,7 @@ Este projeto está licenciado sob a licença MIT.
 
 ---
 
-© 2025 Aeolus Backend Camera - Desenvolvido por [Seu Nome]
+© 2025 Aeolus Backend Camera - Desenvolvido por Marcos Neves
 
 
 
