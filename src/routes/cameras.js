@@ -1,9 +1,9 @@
 // src/routes/cameras.js
-const express = require('express');
+import express from'express';
 const router = express.Router();
-const Camera = require('../models/Camera');
-const { cameraSchema } = require('../utils/validators');
-const axios = require('axios');
+import Camera from '../models/Camera.js';
+import  cameraSchema  from '../utils/validators.js';
+import axios from 'axios';
 
 /**
  * Cria uma nova câmera no MongoDB e registra no serviço gerador
